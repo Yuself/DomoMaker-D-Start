@@ -4,8 +4,6 @@ const { Account } = models;
 
 const loginPage = (req, res) => res.render('login');
 
-const signupPage = (req, res) => res.render('signup');
-
 // Domo B
 const logout = (req, res) => {
   req.session.destroy();
@@ -73,7 +71,6 @@ try {
 
 module.exports = {
   loginPage,
-  signupPage,
   logout,
   login,
   signup,
